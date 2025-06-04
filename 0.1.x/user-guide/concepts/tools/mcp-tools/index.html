@@ -2703,7 +2703,7 @@
 <p>MCP enables communication between agents and MCP servers that provide additional tools. Strands includes built-in support for connecting to MCP servers and using their tools.</p>
 <p>When working with MCP tools in Strands, all agent operations must be performed within the MCP client's context manager (using a with statement). 
 This requirement ensures that the MCP session remains active and connected while the agent is using the tools. 
-If you attempt to use an agent or its MCP tools outside of this context, you'll encounter errors because the MCP session will have closed, leaving the tools uninitialized and disconnected.</p>
+If you attempt to use an agent or its MCP tools outside of this context, you'll encounter errors because the MCP session will have closed.</p>
 <h2 id="mcp-server-connection-options">MCP Server Connection Options<a class="headerlink" href="#mcp-server-connection-options" title="Permanent link">&para;</a></h2>
 <p>Strands provides several ways to connect to MCP servers:</p>
 <h3 id="1-standard-io-stdio">1. Standard I/O (stdio)<a class="headerlink" href="#1-standard-io-stdio" title="Permanent link">&para;</a></h3>
