@@ -34,7 +34,7 @@ This repository contains the documentation for the Strands Agents SDK, a simple 
 
 The official documentation is available online at: https://strandsagents.com.
 
-## Local Development
+## Local Developmentt
 
 ### Prerequisites
 
