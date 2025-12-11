@@ -148,7 +148,7 @@ jobs:
               comment.body.includes('Documentation Preview')
             );
 
-            if (existingComment) {
+            if (existingComment) {its 
               // Update existing comment
               await github.rest.issues.updateComment({
                 owner: context.repo.owner,
