@@ -38,7 +38,7 @@ The official documentation is available online at: https://strandsagents.com.
 
 ### Prerequisites
 
-- Python 3.10+, node 20+
+- Python 3.10+, node 20+ 
 
 ### Setup and Installation
 
