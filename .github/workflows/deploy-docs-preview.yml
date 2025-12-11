@@ -5,8 +5,8 @@ on:
     branches: [main]
 
 env:
-  S3_BUCKET: ${{ vars.S3_BUCKET }}
-  CLOUDFRONT_DISTRIBUTION_ID: ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}
+  S3_BUCKET: ${{ secrets.S3_BUCKET }}
+  CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
 
 jobs:
   authorization-check:
@@ -89,8 +89,8 @@ jobs:
         run: |
           # PR preview: deploy to pr-{number} folder
           echo "path=pr-${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
-          echo "is_preview=true" >> $GITHUB_OUTPUT
-          echo "base_url=${{ vars.CLOUDFRONT_DOMAIN_NAME }}/pr-${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
+
+          echo "base_url=${{ secrets.CLOUDFRONT_DOMAIN_NAME }}/pr-${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
 
       - name: Deploy to S3
         run: |
@@ -153,8 +153,4 @@ jobs:
         run: |
           echo "Deployment complete!"
           echo "Deployed to: ${{ steps.deployment-path.outputs.base_url }}"
-          if [ "${{ steps.deployment-path.outputs.is_preview }}" = "true" ]; then
-            echo "This is a preview deployment for PR #${{ github.event.number }}"
-          else
-            echo "This is a production deployment"
-          fi
+          echo "This is a preview deployment for PR #${{ github.event.pull_request.number }}"
