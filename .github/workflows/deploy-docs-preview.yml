@@ -63,14 +63,31 @@ jobs:
           persist-credentials: false # Don't persist credentials for subsequent actions
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-          cache: 'pip'
+          python-version: 3.x
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+
+      - name: Clone typescript_sdk
+        run: |
+          git clone https://github.com/strands-agents/sdk-typescript.git/ ./sdk-typescript
+
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+
+      - uses: actions/cache@v4
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: .cache
+          restore-keys: |
+            mkdocs-material-
 
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
+          pip install .
+          npm install ./sdk-typescript
+          npm install
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v5
