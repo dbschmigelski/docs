@@ -34,11 +34,11 @@ This repository contains the documentation for the Strands Agents SDK, a simple 
 
 The official documentation is available online at: https://strandsagents.com.
 
-## Local Development
+## Local Developmentt
 
 ### Prerequisites
-
-- Python 3.10+, node 20+
+ 
+- Python 3.10+, node 20+ 
 
 ### Setup and Installation
 
