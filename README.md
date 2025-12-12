@@ -37,7 +37,7 @@ The official documentation is available online at: https://strandsagents.com.
 ## Local Developmentt
 
 ### Prerequisites
-
+ 
 - Python 3.10+, node 20+ 
 
 ### Setup and Installation
