@@ -12,6 +12,7 @@
   <h2>
     A model-driven approach to building AI agents in just a few lines of code.
   </h2>
+  
 
   <div align="center">
     <a href="https://github.com/strands-agents/docs/graphs/commit-activity"><img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/strands-agents/docs"/></a>
