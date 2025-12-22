@@ -1,5 +1,8 @@
 # llama.cpp
 
+!!! info "Language Support"
+    This provider is only supported in Python.
+
 [llama.cpp](https://github.com/ggml-org/llama.cpp) is a high-performance C++ inference engine for running large language models locally. The Strands Agents SDK implements a llama.cpp provider, allowing you to run agents against any llama.cpp server with quantized models.
 
 ## Installation
@@ -56,12 +59,10 @@ Before using LlamaCppModel, you need a running llama.cpp server with a GGUF mode
 
 ```bash
 # Download a model (e.g., using Hugging Face CLI)
-huggingface-cli download ggml-org/Qwen2.5-7B-GGUF \
-  Qwen2.5-7B-Q4_K_M.gguf --local-dir ./models
+hf download ggml-org/Qwen3-4B-GGUF Qwen3-4B-Q4_K_M.gguf --local-dir ./models
 
 # Start the server
-llama-server -m models/Qwen2.5-7B-Q4_K_M.gguf \
-  --host 0.0.0.0 --port 8080 -c 8192 --jinja
+llama-server -m models/Qwen3-4B-Q4_K_M.gguf --host 0.0.0.0 --port 8080 -c 8192 --jinja
 ```
 
 ### Model Configuration
