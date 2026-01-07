@@ -12,6 +12,8 @@
   <h2>
     A model-driven approach to building AI agents in just a few lines of code.
   </h2>
+  
+
 
   <div align="center">
     <a href="https://github.com/strands-agents/docs/graphs/commit-activity"><img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/strands-agents/docs"/></a>
@@ -19,6 +21,12 @@
     <a href="https://github.com/strands-agents/docs/pulls"><img alt="GitHub open pull requests" src="https://img.shields.io/github/issues-pr/strands-agents/docs"/></a>
     <a href="https://github.com/strands-agents/docs/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/strands-agents/docs"/></a>
   </div>
+  
+
+
+
+
+
   
   <p>
     <a href="https://strandsagents.com/">Documentation</a>
@@ -33,6 +41,7 @@
 This repository contains the documentation for the Strands Agents SDK, a simple yet powerful framework for building and running AI agents. The documentation is built using [MkDocs](https://www.mkdocs.org/) and provides guides, examples, and API references.
 
 The official documentation is available online at: https://strandsagents.com.
+
 
 ## Local Development
 
