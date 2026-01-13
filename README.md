@@ -8,10 +8,21 @@
   <h1>
     Strands Agents Documentation
   </h1>
+  
 
   <h2>
     A model-driven approach to building AI agents in just a few lines of code.
   </h2>
+
+
+
+
+
+
+
+
+
+
 
   <div align="center">
     <a href="https://github.com/strands-agents/docs/graphs/commit-activity"><img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/strands-agents/docs"/></a>
@@ -34,11 +45,11 @@ This repository contains the documentation for the Strands Agents SDK, a simple 
 
 The official documentation is available online at: https://strandsagents.com.
 
-## Local Development
+## Local Developmentt
 
 ### Prerequisites
-
-- Python 3.10+, node 20+
+ 
+- Python 3.10+, node 20+ 
 
 ### Setup and Installation
 
