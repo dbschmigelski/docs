@@ -84,7 +84,7 @@ extra_javascript:
   - assets/auto-redirect.js
 
 nav:
-  - User Guide:
+  - User Guidesssssssss:
     - Welcome: README.md
     - Quickstart:
       - Getting Started: user-guide/quickstart/overview.md
